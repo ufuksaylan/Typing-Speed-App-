@@ -1,0 +1,38 @@
+/* Apply the custom colors to the table */
+#table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#typingDataTable {
+  background-color: var(--sub-alt-color);
+  text-align: center;
+}
+
+#typingDataTable thead th {
+  color: var(--text-color);
+  background-color: var(--sub-alt-color);
+}
+
+#typingDataTable tbody td {
+  color: var(--sub-color);
+}
+
+#typingDataTable tbody tr:nth-child(odd) {
+  background-color: var(--sub-color);
+}
+
+#typingDataTable tbody tr:nth-child(even) {
+  background-color: var(--sub-alt-color);
+}
+
+#typingDataTable tbody td:first-child {
+  color: var(--main-color);
+}
+
+a {
+  color: var(--main-color);
+  margin-bottom: 30px;
+}

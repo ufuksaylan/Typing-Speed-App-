@@ -1,0 +1,50 @@
+#settings{
+  height: 5vh;
+}
+
+#settings .wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#settings .mobile-settings button {
+  background-color: var(--sub-alt-color);
+  padding: 5px 40px;
+  margin: 10px;
+  font-size: small;
+  color: var(--sub-color);
+  border: none;
+  border-radius: 6px;
+  text-align: center;
+  display: flex;
+  gap: 10px;
+}
+
+.text-button:hover {
+ color: var(--text-color)
+}
+#settings .desktop-setting {
+
+  background-color: var(--sub-alt-color);
+  display: flex;
+  flex-direction: row;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+#settings .desktop-setting .words-specifier {
+  border-right: 4px solid var(--bg-color);
+  border-radius: 2px;
+}
+
+#settings .desktop-setting button {
+  text-align: center;
+  font-size: small;
+
+  color: var(--sub-color);
+  margin: 0px 5px;
+  background-color: var(--sub-alt-color);
+  border: none;
+
+}

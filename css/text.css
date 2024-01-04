@@ -1,0 +1,150 @@
+#text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px; 
+}
+
+#text .wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+#text .content { 
+  color: var(--sub-color);
+}
+
+#text .content p span {
+  position: relative;
+}
+
+#text .content p span.correct {
+  color: var(--text-color);
+}
+
+#text .content p span.incorrect {
+  color: var(--error-color);
+}
+
+#text .content p span.active::before {
+  content: "";
+  position: absolute;
+  left: -1px;
+  bottom: 0;
+  height: 100%;
+  width: 2px;
+
+  opacity: 0;
+  background: var(--caret-color);
+  animation: blink 1s ease-in-out infinite;
+}
+
+@keyframes blink {
+  50%{
+    opacity: 1;
+  }
+}
+
+#text .stats {
+  display: grid;
+  grid-template-areas: 
+  "word character accuracy"
+  ". time ."
+  ". time .";
+  gap: 10px;
+}
+
+#text .stats .time {
+  padding: 10px 30px;
+  border-radius: 190%;
+  border: solid 1px var(--main-color);
+}
+
+#text .stats > div {
+  width: 80px;
+  padding: 10px;
+  border-radius: 6px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+  background-color: var(--sub-alt-color);
+
+}
+
+.try-again:hover {
+ background: var(--sub-alt-color);;
+}
+
+#text .stats > div > p{
+  font-size:x-small;
+}
+
+#text .stats .words-min {
+  grid-area: word;
+}
+
+#text .stats .chars-min {
+  grid-area: character;
+}
+
+#text .stats .accuracy {
+  grid-area: accuracy;
+}
+
+#text .stats .time {
+  grid-area: time;
+}
+
+@media screen and (min-width: 768px) {
+  #text .stats {
+    display: flex;
+  }
+
+  #text .stats .time {
+    margin-right: 50px;
+  }
+}
+
+#input-field {
+  z-index: -9;
+  opacity: 0;
+  position: absolute;
+}
+
+.time-settings {
+  border-left: 4px solid var(--bg-color);
+  border-radius: 2px;
+}
+
+.words-settings {
+  border-left: 4px solid var(--bg-color);
+  border-radius: 2px;
+}
+
+.specifier {
+  margin-left: 5px;
+  text-align: center;
+  font-size: small;
+  color: var(--sub-color);
+}
+
+.specifier:hover {
+  color: var(--text-color)
+ }
+
+.hide {
+  display: none;
+}
+
+.selected {
+  color: var(--main-color)
+}
+
+a {
+  color: var(--main-color);
+  margin-bottom: 30px;
+}

@@ -1,0 +1,21 @@
+
+#header img {
+  height: 9.2rem;
+}
+#header .logo {
+  margin-bottom: -2rem;
+}
+
+#header .wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  #header {
+    height: 25vh;
+  }
+}

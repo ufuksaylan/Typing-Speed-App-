@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typing Test</title>
+  <link 
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
+  rel="stylesheet" 
+  integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" 
+  crossorigin="anonymous"
+  >
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/settings.css">
+  <link rel="stylesheet" href="./css/text.css">
+</head>
+<body>
+  <header id="header">
+    <div class="container-md wrap">
+      <div class="logo">
+        <img src="./images/keyboardLogo.png" alt="keyboardLogo">
+      </div>
+      <div id="header-text">
+        <h3>Typing Test</h3>
+      </div>
+    </div>
+  </header>
+
+  <section id="settings">
+    <div class="container-md wrap">
+      <div class="mobile-settings d-md-none">
+        <button><img src="./icons/gear.svg" alt="gear.svg">Test settings</button>
+      </div>
+      <div class="d-none d-md-block">
+        <div class="desktop-setting">
+          <div class="words-specifier">
+            <button>
+              <img src="./icons/mention.svg" alt="mention icon">
+              <span class="text-button" id="punctuation">punctuation</span>
+            </button>
+            <button>
+              <img src="./icons/hash.svg" alt="hash icon">
+              <span class="text-button" id="numbers">numbers</span>
+            </button>
+          </div>
+          <div class="modes">
+            <button>
+              <img src="./icons/clock.svg" alt="clock icon">
+              <span class="text-button selected" id="time">time</span></button>
+            <button>
+              <img src="./icons/letter-b.svg" alt="clock icon">
+              <span class="text-button" id="words">words</span></button>
+            <button>
+              <img src="./icons/book.svg" alt="alphabet letter">
+              <span class="text-button" id="quotes">quotes</span>
+            </button>
+          </div>
+          
+
+          <div class="time-settings">
+            <span class="specifier" data-time="15">15</span>
+            <span class="specifier" data-time="30">30</span>
+  
+            <span class="specifier selected" data-time="60">60</span>
+  
+            <span class="specifier" data-time="120">120</span>
+          </div>
+          <div class="words-settings hide">
+            <span class="specifier" data-word="10">10</span>
+            <span class="specifier" data-word="25">25</span>
+  
+            <span class="specifier selected" data-word="50">50</span>
+  
+            <span class="specifier" data-word="100">100</span>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="text">
+    <div class="container-md wrap">
+      <input type="text" name="input-field" id="input-field">
+      <div class="content">
+        <p></p>
+      </div>
+      <div class="try-again">
+        <img src="./icons/iteration.svg" alt="iteration">
+      </div>
+      <div class="stats">
+        <div class="time">
+          <h3>60</h3>
+          <p>seconds</p>
+        </div>
+
+        <div class="words-min">
+          <h3>0</h3>
+          <p>WPM</p>
+        </div>
+
+        <div class="chars-min">
+          <h3>0</h3>
+          <p>CPM</p>
+        </div>
+
+        <div class="accuracy">
+          <h3>0</h3>
+          <p>% accuracy</p>
+        </div>
+      </div>
+
+      <a href="./stats.html">See the statistics</a>
+    </div>
+
+  </section>
+
+  <script type="module" src="./js/script.js"></script>
+</body>
+</html>
